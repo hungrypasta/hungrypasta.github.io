@@ -1,4 +1,19 @@
-body, html {
-  background: #000;
-  background-image: url(black-holes.png);
+body {
+  background-color: #000;
+  color: white;
+  background-image: url(https://bettysgraphics.neocities.org/images/backgrounds/pattern%20534.gif);
+}
+
+#container {
+                max-width: 900px;
+                margin: 0 auto;
+			}
+            #container a {
+                color: #ED64F5;
+                font-weight: bold;
+            }
+
+.box {
+	border: 5px outset white;
+	background-color: purple;
 }
