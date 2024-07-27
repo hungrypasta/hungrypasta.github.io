@@ -5,15 +5,63 @@ body {
 }
 
 #container {
-                max-width: 900px;
-                margin: 0 auto;
-			}
-            #container a {
-                color: #ED64F5;
-                font-weight: bold;
-            }
+	max-width: 1000px;
+	width: 1000px;
+	margin: 10px;
+}
+#container a {
+	color: #ED64F5;
+	font-weight: bold;
+	display: flex;
+}
 
 .box {
-	border: 5px outset white;
+	padding: 10px;
 	background-color: purple;
+}
+
+h1 {
+	font-size:35px;
+}
+
+footer {
+	background-color: indigo;
+	padding: 10px;
+	text-align: center;
+	border: 1px solid black
+}
+
+#header {
+	color: #ED64F5;
+	height: 280px;
+	background-image: url(https://sadhost.neocities.org/images/layouts/wp.jpeg);
+	background-size: 100%;
+}
+
+#main {
+	border: 4px solid white;
+	background-color: #43256E;
+	flex: 1;
+	order: 2;
+}
+
+#sidebar {
+	order: 1;
+}
+
+.navbar li a {
+	text-decoration: none;
+}
+
+.navbar ul {
+	display: flex;
+	padding: 0;
+	margin: 0;
+	list-style-type: none;
+	justify-content: space-evenly;
+}
+
+.navbar li a:hover {
+	color: #a49cba;
+	text-decoration: underline;
 }
