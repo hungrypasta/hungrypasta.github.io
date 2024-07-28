@@ -33,7 +33,7 @@ footer {
 
 #header {
 	color: #ED64F5;
-	height: 280px;
+	height: 300px;
 	background-image: url(https://sadhost.neocities.org/images/layouts/wp.jpeg);
 	background-size: 100%;
 }
@@ -68,4 +68,9 @@ footer {
 
 #flex {
 	display: flex;
+}
+
+.imgContainer {
+	float: right;
+	order: 3;
 }
