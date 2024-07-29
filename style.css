@@ -10,7 +10,6 @@ body {
 	margin: 10px;
 }
 #container a {
-	color: #ED64F5;
 	font-weight: bold;
 	display: flex;
 }
@@ -31,7 +30,7 @@ footer {
 	border: 1px solid black
 }
 
-#header {
+#headImg {
 	color: #ED64F5;
 	height: 300px;
 	background-image: url(https://sadhost.neocities.org/images/layouts/wp.jpeg);
@@ -73,4 +72,14 @@ footer {
 .imgContainer {
 	float: right;
 	order: 3;
+}
+
+a:link, a:visited {
+	color: violet;
+	text-decoration: none;
+}
+
+a:hover {
+	color: violet;
+	text-decoration: underline;
 }
