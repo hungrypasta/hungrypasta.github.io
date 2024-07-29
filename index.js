@@ -19,9 +19,43 @@ template.innerHTML = `
 
 document.body.appendChild(template.content);
 
-var mewo = document.getElementById("mewo");
+let mewo = document.getElementById("mewo");
+mewo.onclick = play;
 mewo.addEventListener("mouseover", play);
 function play() {
 	if (typeof sound === 'undefined') sound = new Audio("https://dimden.dev/sounds/mewo.mp3");
 	sound.play();
+}
+
+let grid = document.getElementById("grid");
+for (let i = 0; i < 30; i++) {
+	for (let j = 0; j < 30; j++) {
+		grid.innerHTML += `<div id="cell"></div>`;
+	}
+}
+
+color = "black";
+
+//let cell = document.getElementById("cell");
+grid.addEventListener("mouseover", look);
+function look() {
+	let cell = getHovered();
+	cell.style.background = color;
+}
+
+function getHovered() {
+    let n = document.querySelector(":hover");
+    let nn;
+    while (n) {
+        nn = n;
+        n = nn.querySelector(":hover");
+    }
+    return nn;
+}
+
+
+function changeColor(buttonColor) {
+	//let button = document.getElementById("red");
+	//color = button.innerHTML.toString();
+	color = buttonColor;
 }

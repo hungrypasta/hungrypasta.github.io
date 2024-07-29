@@ -83,3 +83,17 @@ a:hover {
 	color: violet;
 	text-decoration: underline;
 }
+
+#grid {
+	display: grid;
+	grid-template-columns: repeat(30, 1fr);
+	grid-template-rows: repeat(30, 1fr);
+	background-color: white;
+	width: 900px;
+	height: 900px;
+}
+
+#cell {
+	padding: 10px;
+	border: 1px black solid;
+}
