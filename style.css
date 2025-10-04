@@ -12,10 +12,12 @@ body {
 	max-width: 1000px;
 	width: 1000px;
 	margin: 10px;
+	margin: 0 auto;
 }
 #container a {
 	font-weight: bold;
 	display: flex;
+	
 }
 
 .box {
